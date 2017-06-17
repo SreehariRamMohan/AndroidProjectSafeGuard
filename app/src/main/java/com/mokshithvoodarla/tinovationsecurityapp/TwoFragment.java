@@ -94,6 +94,7 @@ public class TwoFragment extends Fragment implements OnChartGestureListener{
         mChart = (PieChart) getView().findViewById(R.id.pieChart1);
         mChart.setOnChartGestureListener(this);
         mChart.setTouchEnabled(true);
+
         mChart.setUsePercentValues(false);
         //mChart.setUsePercentValues(true);
         mChart.getDescription().setEnabled(false);
