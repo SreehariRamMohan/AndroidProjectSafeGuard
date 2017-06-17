@@ -91,15 +91,10 @@ public class TwoFragment extends Fragment implements OnChartGestureListener{
         super.onActivityCreated(savedInstanceState);
     }
     public void makechart() {
-        int total = people.size();
-        //find how many of the entries are the same, that shows the frequency of each name
-        //people.
-
-        nLineChart = (LineChart) getView().findViewById(R.id.lineChart1);
-        /*
         mChart = (PieChart) getView().findViewById(R.id.pieChart1);
         mChart.setOnChartGestureListener(this);
         mChart.setTouchEnabled(true);
+        mChart.setUsePercentValues(false);
         //mChart.setUsePercentValues(true);
         mChart.getDescription().setEnabled(false);
         mChart.setExtraOffsets(5, 10, 5, 5);
@@ -114,28 +109,30 @@ public class TwoFragment extends Fragment implements OnChartGestureListener{
         mChart.setTransparentCircleColor(Color.WHITE);
         mChart.setTransparentCircleAlpha(110);
 
-        mChart.setHoleRadius(1f);
-        mChart.setTransparentCircleRadius(1f);
+        mChart.setHoleRadius(58f);
+        mChart.setTransparentCircleRadius(61f);
 
         mChart.setDrawCenterText(true);
 
         mChart.setRotationAngle(0);
-        mChart.setRotationEnabled(false);
+        mChart.setRotationEnabled(true);
         mChart.animateY(1400, Easing.EasingOption.EaseInOutQuad);
         mChart.setHighlightPerTapEnabled(true);
         List<PieEntry> entries = new ArrayList<>();
-
+        entries.add(new PieEntry(18.5f, "9 PM"));
+        entries.add(new PieEntry(26.7f, "6 PM"));
+        entries.add(new PieEntry(24.0f, "12 PM"));
+        entries.add(new PieEntry(30.8f, "10 AM"));
 
         PieDataSet set = new PieDataSet(entries, "People");
-        PieEntry p = new Pie
-        entries.add()
         int[] c = {Color.RED, Color.BLUE, Color.parseColor("#FFC107"), Color.parseColor("#009688")};
         set.setColors(c);
         set.setValueTextColor(Color.WHITE);
         PieData data = new PieData(set);
         mChart.setData(data);
         mChart.invalidate();
-        */
+
+
 
     }
     @Override

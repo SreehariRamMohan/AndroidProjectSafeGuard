@@ -33,10 +33,9 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
 
 
     }
+
     // Create a storage reference from our app
     //private StorageReference storageRef = storage.getReference();
-
-
 
     @Override
     public int getItemCount() {
