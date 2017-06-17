@@ -55,8 +55,8 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
 
         contactViewHolder.vAction1.setText(ci.action1);
         contactViewHolder.vAction1.setClickable(false);
-        contactViewHolder.vAction2.setText(ci.action2);
-        contactViewHolder.vAction2.setClickable(false);
+        //contactViewHolder.vAction2.setText(ci.action2);
+        //contactViewHolder.vAction2.setClickable(false);
     }
 
     @Override
@@ -73,7 +73,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
         protected TextView description;
         protected ImageView imageView;
         protected Button vAction1;
-        protected Button vAction2;
+        //protected Button vAction2;
 
         public ProfileViewHolder(View v) {
             super(v);
@@ -81,7 +81,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
             description =  (TextView) v.findViewById(R.id.description);
             imageView = (ImageView)  v.findViewById(R.id.imageView);
             vAction1 = (Button)  v.findViewById(R.id.btnOne);
-            vAction2 = (Button) v.findViewById(R.id.btnTwo);
+            //vAction2 = (Button) v.findViewById(R.id.btnTwo);
         }
     }
 }

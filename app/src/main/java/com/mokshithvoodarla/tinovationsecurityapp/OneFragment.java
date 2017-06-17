@@ -133,14 +133,14 @@ public class OneFragment extends Fragment{
             public void onDataChange(DataSnapshot dataSnapshot) {
                 System.out.println(System.currentTimeMillis() + " time: " + time1 + ", onDataChange beginning");
                 info1 = dataSnapshot.child("event").getValue().toString();
-                personName = dataSnapshot.child("person").getValue().toString();
+                //personName = dataSnapshot.child("person").getValue().toString();
                 ci = new ProfileInfo();
-                ci.name=personName;
+                ci.name=time1;
                 ci.description=username;
                 time1.replace('/','|');
                 time1.replace(' ', '-');
-                ci.action1 = time1;
-                ci.action2 = info1;
+                //ci.action1 = time1;
+                ci.action1 = info1;
 
                 int index = username.indexOf("@");
                 String sub = username.substring(0, index);

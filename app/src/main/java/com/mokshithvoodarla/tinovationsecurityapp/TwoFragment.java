@@ -66,7 +66,6 @@ public class TwoFragment extends Fragment implements OnChartGestureListener{
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             Iterator i = dataSnapshot.getChildren().iterator();
-                            i.next();
                             String k1 = ((DataSnapshot)i.next()).getValue().toString();
                             people.add(k1);
                             System.out.println(k1 + "LOL");
